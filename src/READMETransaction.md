@@ -19,7 +19,7 @@ This project is a **console-based accounting tool** that allows users to log tra
 ## 🧠 Skills Practiced
 
 - Java fundamentals: `Scanner`, `if/else`, `while`, `for`, `try/catch`
-- Object-Oriented Programming: classes, constructors, and encapsulation
+- Object-Oriented Programming: classes, constructors.
 - Input validation and clean code formatting
 
 ## 📂 Folder Structure

@@ -46,26 +46,37 @@ public class Main {
             String description = input.nextLine();
 
             double debitAccount;
+
             while (true) {
                 System.out.print("Debit Account: ");
                 try {
                     debitAccount = Double.parseDouble(input.nextLine());
+                    if (debitAccount <= 0) {
+                        System.out.println("❌ Debit amount must be greater than 0.");
+                        continue;
+                    }
                     break;
                 } catch (NumberFormatException e) {
                     System.out.println("❌ Please enter a valid number.");
                 }
             }
 
+
             double creditAccount;
             while (true) {
                 System.out.print("Credit Account: ");
                 try {
                     creditAccount = Double.parseDouble(input.nextLine());
+                    if (creditAccount <= 0) {
+                        System.out.println("❌ Credit amount must be greater than 0.");
+                        continue;
+                    }
                     break;
                 } catch (NumberFormatException e) {
                     System.out.println("❌ Please enter a valid number.");
                 }
             }
+
 
             if (debitAccount != creditAccount) {
                 System.out.println("❌ Transaction Rejected: Debit and Credit must be equal.");
